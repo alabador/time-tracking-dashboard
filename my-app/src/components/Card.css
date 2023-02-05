@@ -1,0 +1,15 @@
+.card {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.title {
+    color: white;
+}
+
+.current-time {
+    color: white;
+}
+
+.previous-time {
+    color: hsl(236, 100%, 87%);
+}
