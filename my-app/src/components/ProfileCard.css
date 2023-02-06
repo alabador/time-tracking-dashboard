@@ -3,8 +3,6 @@
     border-radius: 16px;
     width: 100%;
     padding: 24px;
-    position: relative;
-    /* top: -50px; */
 }
 
 .profile-section img {
@@ -38,19 +36,61 @@
     border-style: none;
     background: none;
     color: hsl(236, 100%, 87%);
-    padding: 0.8rem 0; 
+    /* padding: 0.8rem 0;  */
+}
+
+
+@media screen and (min-width: 750px){
+    .profile-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-info {
+        margin-left: 4rem;
+        font-size: 32px;
+    }
+
+    .profile-name {
+        margin: 20px 0;
+    }
+    
 }
 
 @media screen and (min-width: 1000px) {
     .profile-section img{
         width: 90px;
+        margin-bottom: 24px;
     }
+    
 
     .report-for {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .profile-name {
-        font-size: 32px;
+        font-size: 40px;
+    }
+
+    .profile-card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -24px;
+    }
+
+    .profile-section {
+        height: 70%;
+    }
+
+    .timeline-section{
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .timeline-section button{
+        font-size: 16px;
     }
 }

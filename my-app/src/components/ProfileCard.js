@@ -6,8 +6,10 @@ function ProfileCard() {
         <div className="profile-card">
             <section className='profile-section'>
                 <img src={profile} alt="profile pic"></img>
-                <h2 className="report-for">Report for</h2>
-                <h1 className='profile-name'>Jeremy Robson</h1>
+                <div className='profile-info'>
+                    <h2 className="report-for">Report for</h2>
+                    <h1 className='profile-name'>Jeremy Robson</h1>
+                </div>
             </section>
             <section className='timeline-section'>
                 <button className='daily'>Daily</button>
