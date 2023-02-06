@@ -1,0 +1,29 @@
+.card-bg-color-work{
+    background-color: hsl(15, 100%, 70%);
+}
+.card-bg-color-play{
+    background-color: hsl(195, 74%, 62%);
+}
+.card-bg-color-study{
+    background-color: hsl(348, 100%, 68%);
+}
+.card-bg-color-exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+.card-bg-color-social{
+    background-color: hsl(264, 64%, 52%);
+}
+.card-bg-color-selfcare{
+    background-color: hsl(43, 84%, 65%);
+}
+
+div[class^='card-bg-color']{
+    text-align: right;
+    padding-right: 1rem;
+    border-radius: 16px;
+    z-index: -1;
+}
+
+div[class^='card-bg-color'] img{
+    height: 100px;
+}

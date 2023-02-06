@@ -1,5 +1,21 @@
-.card {
+* {
+    box-sizing: border-box;
+}
+
+.card-info {
+    /* border-radius: 16px; */
     background-color: hsl(235, 46%, 20%);
+    border-radius: 16px;
+    width: 100%;
+    padding: 24px;
+    position: relative;
+    top: -50px;
+}
+
+.title-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .title {

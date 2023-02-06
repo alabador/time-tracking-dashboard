@@ -1,0 +1,36 @@
+.profile-section {
+    background-color:hsl(246, 80%, 60%);
+    border-radius: 16px;
+    width: 100%;
+    padding: 24px;
+    position: relative;
+    /* top: -50px; */
+}
+
+.profile-section img {
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.timeline-section {
+    border-radius: 16px;
+    z-index: -1;
+    background-color: hsl(235, 46%, 20%);
+    padding: 24px;
+}
+
+.report-for {
+    color: hsl(236, 100%, 87%);
+}
+
+.profile-name {
+    color: white;
+}
+
+.timeline-section button {
+    display: block;
+    border-style: none;
+    background: none;
+    color: hsl(236, 100%, 87%);
+    padding: 0.8rem 0; 
+}
