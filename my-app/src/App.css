@@ -2,8 +2,15 @@
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 0px;
+    margin: 5% 2rem;
 }
 
+
+@media screen and (min-width: 750px) {
+    .App{
+        margin: 5% 2rem;
+    }
+}
 
 @media screen and (min-width: 1000px) {
     .App{
