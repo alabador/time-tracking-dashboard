@@ -38,19 +38,19 @@
     margin: 0px;
 }
 
-@media screen and (min-width: 1000px) {
-    .title {
-        font-size: 18px;
+@media screen and (min-width: 0px) {
+    .card-time {
+        display: flex;
+        justify-content: space-between;
     }
-    
     .current-time {
-        font-size: 60px;
-        padding: 16px 0;
+        font-size: 24px;
     }
-    
-    .previous-time {
-        color: hsl(236, 100%, 87%);
-        padding-top: 16px 0;
+}
+
+@media screen and (min-width: 350px) {
+    .current-time {
+        font-size: 32px;
     }
 }
 
@@ -61,6 +61,25 @@
     
     .current-time {
         font-size: 48px;
+    }
+    
+    .previous-time {
+        color: hsl(236, 100%, 87%);
+        padding-top: 16px 0;
+    }
+    .card-time {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .title {
+        font-size: 18px;
+    }
+    
+    .current-time {
+        font-size: 60px;
+        padding: 16px 0;
     }
     
     .previous-time {
