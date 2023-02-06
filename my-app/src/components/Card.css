@@ -10,22 +10,61 @@
     padding: 24px;
     position: relative;
     top: -50px;
+    margin-bottom: -50px;
 }
 
 .title-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 16px 0;
 }
 
 .title {
     color: white;
+    margin: 0px;
+    font-weight: 500;
 }
 
 .current-time {
     color: white;
+    margin: 0px;
+    font-weight: 400;
+
 }
 
 .previous-time {
     color: hsl(236, 100%, 87%);
+    margin: 0px;
+}
+
+@media screen and (min-width: 1000px) {
+    .title {
+        font-size: 18px;
+    }
+    
+    .current-time {
+        font-size: 60px;
+        padding: 16px 0;
+    }
+    
+    .previous-time {
+        color: hsl(236, 100%, 87%);
+        padding-top: 16px 0;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .title {
+        font-size: 18px;
+    }
+    
+    .current-time {
+        font-size: 48px;
+    }
+    
+    .previous-time {
+        color: hsl(236, 100%, 87%);
+        padding-top: 16px 0;
+    }
 }

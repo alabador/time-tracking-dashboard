@@ -17,14 +17,20 @@
     z-index: -1;
     background-color: hsl(235, 46%, 20%);
     padding: 24px;
+    padding-top: 48px;
+    position: relative;
+    top: -24px;
 }
 
 .report-for {
     color: hsl(236, 100%, 87%);
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .profile-name {
     color: white;
+    font-weight: 400;
 }
 
 .timeline-section button {
@@ -33,4 +39,18 @@
     background: none;
     color: hsl(236, 100%, 87%);
     padding: 0.8rem 0; 
+}
+
+@media screen and (min-width: 1000px) {
+    .profile-section img{
+        width: 90px;
+    }
+
+    .report-for {
+        font-size: 20px;
+    }
+
+    .profile-name {
+        font-size: 32px;
+    }
 }

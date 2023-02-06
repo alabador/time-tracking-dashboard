@@ -9,6 +9,17 @@ body {
   background-color: hsl(226, 43%, 10%);
 }
 
+@media screen and (min-width: 1000px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: none;
+    height: 100vh;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
