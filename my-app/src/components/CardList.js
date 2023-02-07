@@ -1,4 +1,3 @@
-import Data from '../data.json';
 import Card from './Card';
 import './CardList.css'
 
