@@ -15,7 +15,7 @@ function Card(props) {
                 </div>
                 <div className = 'card-time'>
                     <h1 className='current-time'>{props.currentTime}hrs</h1>
-                    <h3 className="previous-time">Last Week - <span className="previous-time">{props.previousTime}</span></h3>
+                    <h3 className="previous-time">{props.timeframe}<span className="previous-time">{props.previousTime}</span></h3>
                 </div>
             </section>
         </div>

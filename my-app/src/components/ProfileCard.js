@@ -1,11 +1,21 @@
 import './ProfileCard.css';
 import profile from '../images/image-jeremy.png'
+import { useState } from 'react';
 
-function ProfileCard() {
-    function handleClick() {
-        console.log('clicked!')
+function ProfileCard({time, func}) {
+
+    //passes prop to parent
+    function dailyClicked() {
+        func('daily');
     }
-    
+
+    function weeklyClicked() {
+        func('weekly');
+    }
+    function monthlyClicked() {
+        func('monthly');
+    }
+
     return(
         <div className="profile-card">
             <section className='profile-section'>
@@ -16,9 +26,9 @@ function ProfileCard() {
                 </div>
             </section>
             <section className='timeline-section'>
-                <button className='daily' onClick={handleClick}>Daily</button>
-                <button className='weekly' onClick={handleClick}>Weekly</button>
-                <button className='monthly' onClick={handleClick}>Monthly</button>
+                <button className='daily' onClick={dailyClicked}>Daily</button>
+                <button className='weekly' onClick={weeklyClicked}>Weekly</button>
+                <button className='monthly' onClick={monthlyClicked}>Monthly</button>
             </section>
         </div>
     )

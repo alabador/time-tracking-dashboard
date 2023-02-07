@@ -5,11 +5,17 @@ import Data from './data.json';
 import {useState} from 'react';
 
 function App() {
-  const [data, setData] = useState(Data)
+  const [timeframe, setTimeframe] = useState('daily');
+
+  //function to pass prop from children
+  const grabTimeframe = (time) => {
+    setTimeframe(time)
+  }
+
   return (
     <div className="App">
-      <ProfileCard />
-      <CardList data={data}/>
+      <ProfileCard time={timeframe} func={grabTimeframe}/>
+      <CardList data={Data} time={timeframe}/>
     </div>
   );
 }
