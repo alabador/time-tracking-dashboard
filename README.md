@@ -1,7 +1,9 @@
 # time-tracking-dashboard
 A small project to track time spent on tasks, used to practice React skills.
 
-**Link to project:** 
+**Link to project:** https://timetracker-dash.netlify.app/
+
+![Time Tracking Dashboard](./my-app/src/images/screenshot.png)
 
 ## How It's Made:
 
