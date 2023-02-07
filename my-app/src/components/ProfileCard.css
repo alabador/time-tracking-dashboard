@@ -1,3 +1,11 @@
+.active {
+    color: white;
+}
+
+.inactive {
+    color:hsl(236, 100%, 87%);
+}
+
 .profile-section {
     background-color:hsl(246, 80%, 60%);
     border-radius: 16px;
@@ -36,7 +44,6 @@
     /* display: block; */
     border-style: none;
     background: none;
-    color: hsl(236, 100%, 87%);
 }
 
 .timeline-section button:hover {

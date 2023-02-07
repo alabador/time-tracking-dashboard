@@ -4,16 +4,33 @@ import { useState } from 'react';
 
 function ProfileCard({time, func}) {
 
+    const [dailyActive, setDailyActive] = useState(true);
+    const [weeklyActive, setWeeklyActive] = useState(false);
+    const [monthlyActive, setMonthlyActive] = useState(false);
+
+
+    //set current button to active
+    //check if other buttons are active, if so then inactive
+
     //passes prop to parent
     function dailyClicked() {
         func('daily');
+        setDailyActive(true)
+        setWeeklyActive(false)
+        setMonthlyActive(false)
     }
 
     function weeklyClicked() {
         func('weekly');
+        setDailyActive(false)
+        setWeeklyActive(true)
+        setMonthlyActive(false)
     }
     function monthlyClicked() {
         func('monthly');
+        setDailyActive(false)
+        setWeeklyActive(false)
+        setMonthlyActive(true)
     }
 
     return(
@@ -26,9 +43,9 @@ function ProfileCard({time, func}) {
                 </div>
             </section>
             <section className='timeline-section'>
-                <button className='daily' onClick={dailyClicked}>Daily</button>
-                <button className='weekly' onClick={weeklyClicked}>Weekly</button>
-                <button className='monthly' onClick={monthlyClicked}>Monthly</button>
+                <button className={`daily ${dailyActive ? "active" : "inactive"}`} onClick={dailyClicked}>Daily</button>
+                <button className={`weekly ${weeklyActive ? "active" : "inactive"}`} onClick={weeklyClicked}>Weekly</button>
+                <button className={`monthly ${monthlyActive ? "active" : "inactive"}`} onClick={monthlyClicked}>Monthly</button>
             </section>
         </div>
     )
