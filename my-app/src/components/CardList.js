@@ -2,10 +2,10 @@ import Data from '../data.json';
 import Card from './Card';
 import './CardList.css'
 
-function CardList() {
+function CardList({data}) {
     return (
         <div className='cardlist'>
-            {Data.map(task => {
+            {data.map(task => {
                 return(
                     <Card 
                     title={task.title}

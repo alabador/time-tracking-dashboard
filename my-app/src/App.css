@@ -17,5 +17,6 @@
         grid-template-columns: 1fr 3fr;
         column-gap: 24px;
         row-gap: 0px;
+        margin: 5% 8%;
     }
 }

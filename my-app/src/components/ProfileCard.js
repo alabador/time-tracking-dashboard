@@ -2,6 +2,10 @@ import './ProfileCard.css';
 import profile from '../images/image-jeremy.png'
 
 function ProfileCard() {
+    function handleClick() {
+        console.log('clicked!')
+    }
+    
     return(
         <div className="profile-card">
             <section className='profile-section'>
@@ -12,9 +16,9 @@ function ProfileCard() {
                 </div>
             </section>
             <section className='timeline-section'>
-                <button className='daily'>Daily</button>
-                <button className='weekly'>Weekly</button>
-                <button className='monthly'>Monthly</button>
+                <button className='daily' onClick={handleClick}>Daily</button>
+                <button className='weekly' onClick={handleClick}>Weekly</button>
+                <button className='monthly' onClick={handleClick}>Monthly</button>
             </section>
         </div>
     )
